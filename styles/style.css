@@ -1,0 +1,135 @@
+/* Shared styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.logo-text {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.logo-g {
+    color: #FF42A5;
+}
+
+.primary-color {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feature-description {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    padding: 20px 40px;
+    border-radius: 48px;
+    border: none;
+    background-color: #F948B2;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Navigation section */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-icon {
+    width: 85px;
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    color: #3C354F;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.menu li {
+    list-style: none;
+    margin-right: 32px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.follow-us-span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);  
+    padding: 15px 24px;
+
+}
+
+.social-logo {
+    height: 24px;
+    margin-left: 10px;
+}
+
+
+/* Banner section */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-content {
+    background-image: url('../images/Group\ 14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    text-align: left;
+    padding-left: 200px;
+}
+
+.banner-title-1 {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.banner-title-2 {
+    font-size: 5.9rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.banner-description {
+    text-align: left;
+}
+
+.btn-rogue {
+    background-color: #4EC5F7;
+}
+
+.banner-img {
+    padding-right: 120px;
+    width: 550px;
+}
+
