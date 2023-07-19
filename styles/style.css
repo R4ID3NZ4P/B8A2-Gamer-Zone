@@ -401,6 +401,10 @@ nav {
         gap: 50px;
     }
 
+    .play-instantly-img-container {
+        margin-left: 50px;
+    }
+
     .play-instantly-img {
         width: 300px;
     }
