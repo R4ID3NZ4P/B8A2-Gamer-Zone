@@ -299,6 +299,38 @@ nav {
     left: -20%;
 }
 
+/* Tags section */
+
+.tags {
+    background-color: #FFF9FC;
+    margin-top: 100px;
+    padding: 50px 200px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFF;
+    padding: 5px 5px;
+    border-radius: 50px;
+    width: 170px;
+    height: 50px;
+}
+
+.tag:hover {
+    color: #FF42A5;
+    border: 2px solid #FF42A5;
+}
+
+.tag-img {
+    width: 50px;
+}
+
 /* Responsive properties */
 
 /* For mobile screen */
@@ -385,6 +417,20 @@ nav {
         margin: 0 auto;
     }
 
+    .tags {
+        padding: 50px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 0.75fr);
+    }
+
+    .tag-img {
+        width: 24px;
+    }
+
+    .tag {
+        width: 110px;
+    }
+
 }
 
 /* For tablet screen */
@@ -440,6 +486,10 @@ nav {
 
     .play-instantly-badge-img {
         width: 200px;
+    }
+
+    .tags {
+        padding: 50px 20px;
     }
 
 }
