@@ -22,6 +22,13 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.secondary-color {
+    background: linear-gradient(180deg, #F948B2 50%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .feature-description {
     color: #534C64;
     font-size: 1rem;
@@ -194,6 +201,10 @@ nav {
     text-align: center;
 }
 
+.funny-videos .section-description {
+    margin-bottom: 50px;
+}
+
 .cards-container {
     display: flex;
     justify-content: space-around;
@@ -251,9 +262,42 @@ nav {
     cursor: pointer;
 }
 
-/* .overlay {
-    display: none;
-} */
+/* Play instantly section */
+
+.play-instantly {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    gap: 200px;
+    padding: 0 200px;
+}
+
+.play-instantly-content {
+    text-align: right;
+}
+
+.play-instantly-content .section-description {
+    width: 60%;
+    margin-left: auto;
+}
+
+.play-instantly-img {
+    width: 500px;
+}
+
+.play-instantly-img-container {
+    position: relative;
+}
+
+.play-instantly-badge-img {
+    width: 250px;
+}
+
+.play-instantly-badge {
+    position: absolute;
+    bottom: -10%;
+    left: -20%;
+}
 
 /* Responsive properties */
 
@@ -261,7 +305,8 @@ nav {
 
 @media screen and (max-width:576px) {
     nav,
-    .cards-container {
+    .cards-container,
+    .play-instantly {
         padding: 10px 30px;
         justify-content: center;
         align-items: center;
@@ -270,7 +315,8 @@ nav {
     nav,
     .menu,
     .we-are-gamer,
-    .cards-container {
+    .cards-container,
+    .play-instantly {
         flex-direction: column;
         text-align: center;
     }
@@ -319,6 +365,26 @@ nav {
         gap: 50px;
     }
 
+    .play-instantly {
+        gap: 50px;
+    }
+
+    .play-instantly-img {
+        width: 300px;
+    }
+
+    .play-instantly-badge-img {
+        width: 150px;
+    }
+
+    .play-instantly-content {
+        text-align: center;
+    }
+
+    .play-instantly-content .section-description {
+        margin: 0 auto;
+    }
+
 }
 
 /* For tablet screen */
@@ -326,7 +392,8 @@ nav {
 @media screen and (min-width: 576px) and (max-width: 960px) {
     nav,
     .we-are-gamer,
-    .cards-container {
+    .cards-container,
+    .play-instantly {
         flex-direction: column;
         padding: 0;
         align-items: center;
@@ -361,4 +428,18 @@ nav {
     .cards-container {
         gap: 50px;
     }
+
+    .play-instantly {
+        gap: 50px;
+        padding: 0 100px;
+    }
+
+    .play-instantly-img {
+        width: 400px;
+    }
+
+    .play-instantly-badge-img {
+        width: 200px;
+    }
+
 }
