@@ -188,12 +188,80 @@ nav {
     margin-top: 0;
 }
 
+/* Funny videos section */
+
+.funny-videos {
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 200px;
+}
+
+.funny-videos .card-frame {
+    width: 250px;
+}
+
+.funny-videos .feature-description {
+    width: 95%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.funny-videos .card > img {
+    width: 100%;
+}
+
+.funny-videos .card {
+    position: relative;
+}
+
+.overlay-img {
+    width: 40px;
+    margin-bottom: 20px;
+    padding-top: 50%;
+}
+
+.overlay-text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FF42A5;
+    margin-top: 0;
+    }
+
+.overlay {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 99%;
+    transform: translate(-50%, -50%);
+}
+
+.card:hover .overlay{
+    display: block;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.337);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+
+/* .overlay {
+    display: none;
+} */
+
 /* Responsive properties */
 
 /* For mobile screen */
 
 @media screen and (max-width:576px) {
-    nav {
+    nav,
+    .cards-container {
         padding: 10px 30px;
         justify-content: center;
         align-items: center;
@@ -201,7 +269,8 @@ nav {
 
     nav,
     .menu,
-    .we-are-gamer {
+    .we-are-gamer,
+    .cards-container {
         flex-direction: column;
         text-align: center;
     }
@@ -246,13 +315,18 @@ nav {
         margin: 0 auto;
     }
 
+    .cards-container {
+        gap: 50px;
+    }
+
 }
 
 /* For tablet screen */
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
     nav,
-    .we-are-gamer {
+    .we-are-gamer,
+    .cards-container {
         flex-direction: column;
         padding: 0;
         align-items: center;
@@ -282,5 +356,9 @@ nav {
     .gamer-info-container .section-description {
         width: 70%;
         margin: 0 auto;
+    }
+
+    .cards-container {
+        gap: 50px;
     }
 }
